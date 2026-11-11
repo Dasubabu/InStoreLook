@@ -1,0 +1,6 @@
+{
+  "name": "InStoreLook",
+  "description": "A localized platform for rural and semi-urban users in India to find and list products available in nearby physical stores.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

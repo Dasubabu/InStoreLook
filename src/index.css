@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Plus Jakarta Sans", system-ui, sans-serif;
+
+  --color-brand-primary: #6557f5;
+  --color-brand-primary-hover: #5144c7;
+  --color-brand-success: #2f7e1a;
+  --color-brand-urgency: #ff7f3f;
+  --color-brand-dark: #171717;
+  --color-surface-light: #f7f7f2;
+}
+
+@layer base {
+  body {
+    @apply bg-[#f1f2ed] text-[#171717] font-sans antialiased selection:bg-[#6557f5] selection:text-white;
+  }
+
+  button,
+  input,
+  textarea,
+  select {
+    font: inherit;
+  }
+
+  button:focus-visible,
+  input:focus-visible,
+  textarea:focus-visible,
+  select:focus-visible {
+    outline: 2px solid #6557f5;
+    outline-offset: 3px;
+  }
+}
+
+/* InStoreLook Bright Energetic Solid Card Utilities */
+.quick-card {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);
+}
+
+.teal-btn {
+  background-color: #0d7d6f;
+  color: #ffffff;
+}
+
+.teal-btn:active {
+  background-color: #0a6659;
+}
+
+.teal-badge {
+  background-color: #F3E8FF;
+  color: #0d7d6f;
+  border: 1px solid #DDD6FE;
+}
+
+.orange-ribbon {
+  background-color: #F97316;
+  color: #ffffff;
+}
+
+.green-badge {
+  background-color: #DCFCE7;
+  color: #16A34A;
+  border: 1px solid #BBF7D0;
+}
+
+.live-dot {
+  width: 0.45rem;
+  height: 0.45rem;
+  display: inline-block;
+  flex: 0 0 auto;
+  border-radius: 9999px;
+  background: #d6ff62;
+  box-shadow: 0 0 0 0 rgba(214, 255, 98, 0.6);
+  animation: live-pulse 1.8s infinite;
+}
+
+.live-dot-dark {
+  background: #2f7e1a;
+  box-shadow: 0 0 0 0 rgba(47, 126, 26, 0.45);
+}
+
+@keyframes live-pulse {
+  0% { box-shadow: 0 0 0 0 rgba(214, 255, 98, 0.55); }
+  70% { box-shadow: 0 0 0 0.35rem rgba(214, 255, 98, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(214, 255, 98, 0); }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.flex-1 {
+  min-height: 0;
+  min-width: 0;
+}
+
+html,
+body {
+  overscroll-behavior-y: contain;
+  touch-action: pan-x pan-y;
+  background-color: #f1f2ed;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+.theme-toggle {
+  border-color: #deded5;
+  background: rgba(255, 255, 255, 0.92);
+  color: #171717;
+  backdrop-filter: blur(14px);
+}
+
+/* Keep the existing customer and seller screens legible when the shell is dark. */
+html[data-theme='dark'] body {
+  background-color: #0d100e;
+  color: #f5f7f2;
+}
+
+html[data-theme='dark'] .app-shell,
+html[data-theme='dark'] .app-shell > div {
+  background-color: #111512 !important;
+  color: #f5f7f2;
+}
+
+html[data-theme='dark'] .customer-layout,
+html[data-theme='dark'] .customer-home-surface {
+  background-color: #111512 !important;
+  color: #f5f7f2;
+}
+
+html[data-theme='dark'] .sample-catalog-label {
+  border-color: #70863d;
+  background-color: #2c3b18;
+  color: #d6ff62;
+}
+
+html[data-theme='dark'] .theme-toggle {
+  border-color: #3c443f;
+  background: rgba(28, 34, 30, 0.94);
+  color: #d6ff62;
+}
+
+html[data-theme='dark'] .entry-role-screen {
+  background: linear-gradient(180deg, #161d18 0%, #111512 55%, #17231a 100%);
+}
+
+html[data-theme='dark'] .entry-welcome-screen,
+html[data-theme='dark'] .entry-screen {
+  background: linear-gradient(180deg, #161d18 0%, #111512 55%, #17231a 100%) !important;
+}
+
+html[data-theme='dark'] .app-shell [class~='bg-white'],
+html[data-theme='dark'] .app-shell [class*='bg-white/'],
+html[data-theme='dark'] .app-shell [class~='bg-slate-50'],
+html[data-theme='dark'] .app-shell [class~='bg-slate-100'],
+html[data-theme='dark'] .app-shell [class*='bg-slate-100/'],
+html[data-theme='dark'] .app-shell [class~='bg-teal-50'],
+html[data-theme='dark'] .app-shell [class~='bg-emerald-50'],
+html[data-theme='dark'] .app-shell [class~='bg-emerald-100'],
+html[data-theme='dark'] .app-shell [class~='bg-amber-100'],
+html[data-theme='dark'] .app-shell [class*='bg-[#f7f7f2]'],
+html[data-theme='dark'] .app-shell [class*='bg-[#F7F7FA]'],
+html[data-theme='dark'] .app-shell [class*='bg-[#f1f2ed]'],
+html[data-theme='dark'] .app-shell [class*='bg-[#FFFFFF]'] {
+  background-color: #1c231f !important;
+}
+
+html[data-theme='dark'] .app-shell [class*='bg-[#e7e4ff]'] {
+  background-color: #2b285d !important;
+}
+
+html[data-theme='dark'] .app-shell [class*='bg-[#dff3ed]'],
+html[data-theme='dark'] .app-shell [class*='bg-[#e4f7da]'] {
+  background-color: #213d31 !important;
+}
+
+html[data-theme='dark'] .app-shell [class*='bg-[#ffe6bd]'],
+html[data-theme='dark'] .app-shell [class*='bg-[#f3e8d9]'] {
+  background-color: #4a3420 !important;
+}
+
+html[data-theme='dark'] .app-shell [class*='bg-[#ffe0ed]'] {
+  background-color: #4d2639 !important;
+}
+
+html[data-theme='dark'] .app-shell [class*='bg-[#e2f0ff]'] {
+  background-color: #233d58 !important;
+}
+
+html[data-theme='dark'] .app-shell [class*='bg-[#eff8cf]'] {
+  background-color: #2c3b18 !important;
+}
+
+html[data-theme='dark'] .app-shell [class*='text-[#1A1A1A]'],
+html[data-theme='dark'] .app-shell [class*='text-[#151515]'],
+html[data-theme='dark'] .app-shell [class*='text-[#171717]'] {
+  color: #f5f7f2 !important;
+}
+
+html[data-theme='dark'] .app-shell [class*='text-slate-400'],
+html[data-theme='dark'] .app-shell [class*='text-slate-500'],
+html[data-theme='dark'] .app-shell [class*='text-slate-600'],
+html[data-theme='dark'] .app-shell [class*='text-slate-700'] {
+  color: #b8c2ba !important;
+}
+
+html[data-theme='dark'] .app-shell [class*='text-[#5144c7]'] {
+  color: #bdb7ff !important;
+}
+
+html[data-theme='dark'] .app-shell [class*='text-[#2c2868]'],
+html[data-theme='dark'] .app-shell [class*='text-[#40520b]'],
+html[data-theme='dark'] .app-shell [class*='text-[#2f7e1a]'] {
+  color: #d6ff62 !important;
+}
+
+html[data-theme='dark'] .app-shell [class*='bg-[#d6ff62]'][class*='text-[#171717]'] {
+  color: #171717 !important;
+}
+
+html[data-theme='dark'] .app-shell .teal-badge {
+  border-color: #554d88;
+  background-color: #2b285d;
+  color: #d5d0ff;
+}
+
+html[data-theme='dark'] .app-shell .green-badge {
+  border-color: #416434;
+  background-color: #213d31;
+  color: #b8ed9d;
+}
+
+html[data-theme='dark'] .app-shell [class*='border-[#deded5]'],
+html[data-theme='dark'] .app-shell [class*='border-[#e4e3db]'],
+html[data-theme='dark'] .app-shell [class*='border-[#e9e8e0]'],
+html[data-theme='dark'] .app-shell [class*='border-slate-200'],
+html[data-theme='dark'] .app-shell [class*='border-slate-300'] {
+  border-color: #3c443f !important;
+}
+
+html[data-theme='dark'] .app-shell input::placeholder {
+  color: #8e9a91;
+}
+
+html[data-theme='dark'] .app-shell input {
+  color: #f5f7f2;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+.overflow-y-auto,
+.overflow-x-auto,
+.overflow-y-scroll {
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.overflow-y-auto::-webkit-scrollbar,
+.overflow-x-auto::-webkit-scrollbar,
+.overflow-y-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Shimmer Loader */
+@keyframes shimmer-light {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.shimmer-skeleton {
+  background: linear-gradient(90deg, #f1f5f9 25%, #e2e8f0 50%, #f1f5f9 75%);
+  background-size: 200% 100%;
+  animation: shimmer-light 1.5s infinite linear;
+}
+
+.customer-bottom-nav {
+  padding-bottom: max(0.5rem, env(safe-area-inset-bottom));
+}
+
+@media (max-width: 640px) {
+  .customer-bottom-nav button {
+    min-width: 3.75rem;
+    min-height: 2.75rem;
+  }
+}

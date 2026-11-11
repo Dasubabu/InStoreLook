@@ -1,0 +1,97 @@
+.isl-home { --isl-wine: var(--shop-accent); --isl-ink: var(--shop-ink); --isl-muted: var(--shop-muted); --isl-line: var(--shop-line); min-height: 100%; color: var(--shop-ink); background: var(--shop-bg); }
+html[data-theme='dark'] .customer-home-surface.isl-home { background: var(--shop-bg) !important; color: var(--shop-ink); }
+.isl-home img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.isl-home button:disabled { opacity: .5; }
+.isl-content { max-width: 1368px; margin: auto; padding: 0 36px; }
+.isl-announcement { background: var(--shop-accent-soft); color: var(--shop-accent); display: flex; justify-content: center; gap: 22px; padding: 9px 20px; font-size: 10px; font-weight: 550; letter-spacing: .25px; }
+.isl-announcement-note { color: var(--shop-muted); border-left: 1px solid var(--shop-line); padding-left: 22px; }
+.isl-discover-bar { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 20px 0 4px; }
+.isl-quick-pills { display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; }
+.isl-quick-pills button { display: inline-flex; align-items: center; justify-content: center; gap: 8px; flex-shrink: 0; min-height: 37px; padding: 8px 21px; border: 1px solid var(--shop-line); border-radius: 30px; background: var(--shop-panel); font-size: 11px; font-weight: 550; }
+.isl-quick-pills button.is-active { background: var(--shop-ink); color: var(--shop-panel); border-color: var(--shop-ink); }
+.isl-text-link { display: inline-flex; align-items: center; gap: 7px; min-height: 40px; color: var(--shop-accent); font-size: 11px; font-weight: 600; white-space: nowrap; }
+.isl-category-circles { display: flex; justify-content: center; gap: clamp(22px, 5vw, 66px); overflow-x: auto; scrollbar-width: none; padding: 20px 0 27px; }
+.isl-category-circles button { flex: 0 0 99px; text-align: center; }
+.isl-category-photo { display: grid; place-items: center; width: 92px; height: 100px; margin: 0 auto 10px; overflow: hidden; border-radius: 50px 50px 15px 15px; background: var(--shop-soft); border: 1px solid var(--shop-line); color: var(--shop-accent); }
+.isl-category-photo img { object-position: center 18%; transition: transform .25s; }
+.isl-category-circles button:hover img { transform: scale(1.05); }
+.isl-category-circles strong { font-size: 11px; font-weight: 550; }
+.isl-category-loading { padding: 30px; text-align: center; color: var(--shop-muted); font-size: 12px; }
+.isl-campaign-section { border-radius: 16px; overflow: hidden; background: var(--shop-panel); border: 1px solid var(--shop-line); }
+.isl-campaign { display: grid; grid-template-columns: 1.05fr 1fr; min-height: 440px; background: #f2e5dd; color: #382330; position: relative; }
+.isl-campaign-copy { padding: 56px 30px 36px 60px; display: flex; flex-direction: column; align-items: flex-start; position: relative; z-index: 1; }
+.isl-eyebrow { color: var(--shop-accent); font-size: 9px; font-weight: 650; letter-spacing: 1.8px; text-transform: uppercase; line-height: 1.5; }
+.isl-campaign-copy > .isl-eyebrow { display: flex; align-items: center; gap: 9px; color: #8b4056; font-size: 8px; }
+.isl-campaign-copy > .isl-eyebrow > span { width: 18px; height: 1px; background: currentColor; }
+.isl-campaign h1 { font-size: clamp(38px, 4.4vw, 64px); font-weight: 600; line-height: 1.09; letter-spacing: -2.8px; margin: 24px -40px 19px 0; }
+.isl-campaign h1 em { color: #973c55; font-family: Georgia, serif; font-weight: 400; letter-spacing: -2px; }
+.isl-campaign-description { font-size: 12px; color: #79616b; line-height: 1.85; max-width: 290px; }
+.isl-primary-button { display: inline-flex; align-items: center; justify-content: center; gap: 27px; min-height: 45px; padding: 12px 22px; color: #fff; background: #8a2e4d; font-size: 11px; font-weight: 600; border-radius: 6px; transition: background .2s, transform .2s; }
+.isl-primary-button:hover { background: #6b203b; transform: translateY(-1px); }
+.isl-campaign-copy .isl-primary-button { margin-top: 26px; }
+.isl-campaign-note { padding-top: 26px; margin-top: auto; font-size: 7px; letter-spacing: 1.6px; color: #987783; }
+.isl-campaign-photo { position: relative; overflow: hidden; background: #e2d3cb; min-height: 440px; }
+.isl-campaign-photo > img { position: absolute; inset: 0; object-position: center 20%; mix-blend-mode: multiply; }
+.isl-hero-word { position: absolute; color: #ffffff45; font: italic 230px/1 Georgia, serif; letter-spacing: -12px; top: 65px; left: -15px; }
+.isl-photo-note { position: absolute; bottom: 18px; right: 20px; font-size: 7px; letter-spacing: 1.5px; background: #fff9; padding: 6px 8px; border-radius: 3px; color: #5c444e; }
+.isl-campaign-denim { background: #e4e9e8; } .isl-campaign-denim .isl-campaign-photo { background: #d8dfdf; }
+.isl-campaign-sneaker { background: #efece0; } .isl-campaign-sneaker .isl-campaign-photo { background: #e6e3d8; } .isl-campaign-sneaker .isl-campaign-photo > img { object-fit: contain; padding: 25px; }
+.isl-editorial-placeholder { display: grid; align-content: center; justify-items: center; height: 100%; color: #906a76; min-height: inherit; } .isl-editorial-placeholder > span { font: italic 100px Georgia, serif; } .isl-editorial-placeholder small { font-size: 10px; letter-spacing: 4px; }
+.isl-campaign-controls { display: flex; justify-content: space-between; align-items: center; gap: 12px; height: 52px; padding: 0 23px; }
+.isl-campaign-counter { font-size: 8px; letter-spacing: 1px; color: var(--shop-muted); } .isl-campaign-counter > span { margin-left: 12px; color: var(--shop-ink); }
+.isl-campaign-selectors { display: flex; gap: 2px; } .isl-campaign-selectors button { width: 28px; min-height: 44px; display: grid; place-items: center; } .isl-campaign-selectors button > span { width: 6px; height: 6px; border-radius: 8px; background: var(--shop-line); transition: width .2s; } .isl-campaign-selectors button[aria-pressed='true'] > span { width: 21px; background: var(--shop-accent); }
+.isl-campaign-arrows { display: flex; gap: 8px; } .isl-campaign-arrows button { width: 33px; height: 33px; display: grid; place-items: center; border: 1px solid var(--shop-line); border-radius: 50%; }
+.isl-budget { display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-top: 22px; padding: 23px 28px; background: var(--shop-soft); border: 1px solid var(--shop-line); border-radius: 12px; }
+.isl-budget .isl-eyebrow { font-size: 8px; color: var(--shop-muted); }
+.isl-budget h2 { font-size: 25px; letter-spacing: -.8px; font-weight: 550; margin-top: 5px; } .isl-budget h2 em { font: italic 28px Georgia, serif; color: var(--shop-accent); }
+.isl-budget-actions { display: flex; gap: 10px; } .isl-budget-actions button { display: grid; grid-template-columns: 1fr auto; gap: 1px 18px; min-width: 130px; min-height: 62px; border: 1px solid var(--shop-line); border-radius: 8px; background: var(--shop-panel); padding: 10px 13px; text-align: left; } .isl-budget-actions span { font-size: 8px; color: var(--shop-muted); } .isl-budget-actions strong { grid-column: 1; font-size: 22px; font-weight: 600; letter-spacing: -.8px; } .isl-budget-actions svg { grid-column: 2; grid-row: 1 / 3; align-self: center; color: var(--shop-accent); }
+.isl-section { margin: 40px 0; } .isl-section-heading { display: flex; justify-content: space-between; align-items: flex-end; gap: 14px; margin-bottom: 20px; } .isl-section-heading h2 { font-size: 29px; font-weight: 550; letter-spacing: -1px; margin-top: 6px; line-height: 1.15; } .isl-section-heading .isl-eyebrow { font-size: 8px; color: var(--shop-muted); }
+.isl-product-rail { display: flex; overflow-x: auto; gap: 18px; padding: 2px 2px 15px; margin: -2px; scroll-snap-type: x proximity; scrollbar-width: thin; scrollbar-color: var(--shop-line) transparent; } .isl-product-rail > article { flex: 0 0 calc((100% - 72px) / 5); min-width: 193px; scroll-snap-align: start; } .isl-product-skeleton { min-width: 193px; flex: 1; height: 345px; border-radius: 12px; }
+.isl-brand-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; } .isl-brand-card { display: flex; align-items: center; gap: 18px; background: var(--shop-panel); border: 1px solid var(--shop-line); border-radius: 12px; padding: 14px; text-align: left; overflow: hidden; } .isl-brand-photo { flex-shrink: 0; width: 85px; height: 100px; overflow: hidden; border-radius: 8px; background: var(--shop-soft); } .isl-brand-photo img { object-position: center 20%; } .isl-brand-copy { position: relative; flex: 1; padding-right: 18px; } .isl-brand-copy h3 { font-size: 25px; letter-spacing: -.7px; font-weight: 600; } .isl-brand-copy > span { font-size: 9px; color: var(--shop-muted); display: block; margin-top: 6px; } .isl-brand-copy > svg { position: absolute; top: 2px; right: 0; color: var(--shop-accent); } .isl-brand-skeleton { height: 130px; border-radius: 12px; }
+.isl-mosaic { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.isl-mosaic-card { display: flex; align-items: end; position: relative; height: 350px; overflow: hidden; border-radius: 12px; text-align: left; background: var(--shop-soft); }
+.isl-mosaic-card > img { position: absolute; inset: 0; object-position: center 20%; transition: transform .3s; } .isl-mosaic-card:hover > img { transform: scale(1.04); }
+.isl-mosaic-card::after { content: ''; position: absolute; inset: 40% 0 0; background: linear-gradient(transparent, #2e1628e8); }
+.isl-mosaic-card > div { position: relative; z-index: 1; color: #fff; padding: 22px; width: 100%; } .isl-mosaic-card > div > span:first-child { font-size: 7px; letter-spacing: 2px; opacity: .8; }
+.isl-mosaic-card h3 { font-size: 29px; font-weight: 550; letter-spacing: -.8px; margin: 5px 0 12px; }
+.isl-mosaic-cta { display: flex; align-items: center; justify-content: space-between; font-size: 10px; }
+.isl-local-section { margin: 40px 0 20px; padding: 30px; border-radius: 12px; border: 1px solid var(--shop-line); background: var(--shop-accent-soft); }
+.isl-local-intro { display: flex; gap: 20px; align-items: center; } .isl-local-icon { width: 66px; height: 66px; flex-shrink: 0; display: grid; place-items: center; background: var(--shop-panel); border-radius: 50%; color: var(--shop-accent); }
+.isl-local-intro h2 { font-size: 26px; font-weight: 550; letter-spacing: -.8px; margin: 4px 0 6px; } .isl-local-intro p:last-child { font-size: 11px; color: var(--shop-muted); line-height: 1.7; } .isl-local-intro .isl-primary-button { margin-left: auto; flex-shrink: 0; }
+.isl-reference-note { font-size: 9px; color: var(--shop-muted); line-height: 1.7; margin-top: 12px; }
+.isl-catalog-status { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 15px 0; border-bottom: 1px solid var(--shop-line); } .isl-catalog-status > div { display: flex; align-items: center; gap: 10px; color: var(--shop-muted); } .isl-catalog-status strong { display: block; font-size: 10px; font-weight: 550; } .isl-catalog-status small { display: block; margin-top: 4px; font-size: 9px; }
+.isl-footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 24px; padding: 30px 0; } .isl-footer-wordmark { font-size: 24px; font-weight: 700; letter-spacing: -1px; } .isl-footer-wordmark > span { color: var(--shop-accent); } .isl-footer p { font-size: 10px; color: var(--shop-muted); line-height: 1.8; margin-top: 5px; } .isl-footer-links { display: flex; flex-wrap: wrap; gap: 23px; }
+.isl-sample-details { width: 100%; border-top: 1px solid var(--shop-line); padding-top: 17px; font-size: 10px; color: var(--shop-muted); } .isl-sample-details summary { min-height: 32px; cursor: pointer; }
+.isl-section-error { display: flex; align-items: center; justify-content: space-between; gap: 15px; border: 1px solid var(--shop-line); background: var(--shop-soft); padding: 12px 16px; border-radius: 8px; margin: 12px 0; font-size: 12px; color: var(--shop-muted); }
+.isl-empty { text-align: center; border: 1px dashed var(--shop-line); padding: 32px 20px; border-radius: 12px; } .isl-empty > svg { margin: 0 auto 12px; color: var(--shop-accent); } .isl-empty h3 { font-size: 16px; } .isl-empty p { font-size: 12px; margin-top: 6px; color: var(--shop-muted); }
+@media (max-width: 1100px) {
+  .isl-content { padding-inline: 24px; } .isl-campaign-copy { padding: 40px 20px 30px 38px; } .isl-campaign, .isl-campaign-photo { min-height: 400px; }
+  .isl-campaign h1 { font-size: 46px; } .isl-budget { padding: 22px; gap: 18px; } .isl-budget h2 { font-size: 22px; } .isl-budget h2 em { font-size: 25px; }
+  .isl-budget-actions button { min-width: 105px; gap: 0 8px; } .isl-brand-card { gap: 12px; padding: 12px; } .isl-brand-photo { width: 65px; height: 88px; } .isl-brand-copy h3 { font-size: 22px; }
+  .isl-local-intro { flex-wrap: wrap; } .isl-local-intro .isl-primary-button { margin-left: auto; }
+}
+@media (max-width: 700px) {
+  .isl-content { padding-inline: 16px; } .isl-announcement { font-size: 8px; gap: 10px; padding: 8px 12px; letter-spacing: 0; } .isl-announcement-note { padding-left: 10px; }
+  .isl-discover-bar { padding: 14px 0 0; gap: 0; } .isl-local-shortcut { display: none; } .isl-quick-pills { margin-inline: -16px; padding-inline: 16px; flex: 1; gap: 7px; }
+  .isl-quick-pills button { padding: 7px 16px; min-height: 34px; font-size: 10px; } .isl-quick-pills button > svg { width: 12px; }
+  .isl-category-circles { justify-content: flex-start; gap: 15px; padding: 18px 16px 22px; margin-inline: -16px; } .isl-category-circles button { flex-basis: 64px; } .isl-category-photo { width: 64px; height: 73px; border-radius: 32px 32px 11px 11px; margin-bottom: 7px; } .isl-category-circles strong { font-size: 10px; }
+  .isl-campaign-section { border-radius: 11px; } .isl-campaign { min-height: 314px; grid-template-columns: 1.08fr 1fr; } .isl-campaign-copy { padding: 27px 0 22px 21px; }
+  .isl-campaign-copy > .isl-eyebrow { font-size: 5.5px; letter-spacing: .8px; gap: 5px; white-space: nowrap; } .isl-campaign-copy > .isl-eyebrow > span { width: 10px; }
+  .isl-campaign h1 { font-size: clamp(29px, 6.6vw, 44px); letter-spacing: -1.4px; margin: 25px -13px 13px 0; line-height: 1.09; } .isl-campaign h1 em { letter-spacing: -1px; }
+  .isl-campaign-description { font-size: 10px; line-height: 1.7; padding-right: 7px; max-width: 175px; }
+  .isl-primary-button { min-height: 42px; gap: 13px; font-size: 10px; padding: 10px 15px; } .isl-campaign-copy .isl-primary-button { margin-top: 20px; font-size: 9px; padding-inline: 12px; gap: 10px; } .isl-campaign-copy .isl-primary-button > svg { width: 14px; }
+  .isl-campaign-photo { min-height: 314px; } .isl-campaign-photo > img { object-position: center top; } .isl-campaign-sneaker .isl-campaign-photo > img { padding: 8px; }
+  .isl-hero-word { font-size: 140px; top: 80px; } .isl-photo-note { right: 8px; bottom: 12px; font-size: 5px; letter-spacing: .6px; padding: 5px; } .isl-campaign-note { font-size: 5px; letter-spacing: .9px; padding-top: 22px; }
+  .isl-campaign-controls { height: 42px; padding-inline: 13px; } .isl-campaign-counter { font-size: 6px; letter-spacing: .7px; } .isl-campaign-counter > span { margin-left: 6px; }
+  .isl-campaign-selectors button { width: 23px; min-height: 40px; } .isl-campaign-selectors button > span { width: 5px; height: 5px; } .isl-campaign-selectors button[aria-pressed='true'] > span { width: 16px; } .isl-campaign-arrows { gap: 2px; } .isl-campaign-arrows button { width: 28px; height: 32px; border: 0; } .isl-campaign-arrows svg { width: 14px; }
+  .isl-budget { display: block; padding: 17px; margin-top: 17px; border-radius: 10px; } .isl-budget .isl-eyebrow { font-size: 6.5px; letter-spacing: 1.3px; } .isl-budget h2 { font-size: 21px; } .isl-budget h2 em { font-size: 24px; }
+  .isl-budget-actions { margin-top: 14px; gap: 8px; } .isl-budget-actions button { min-width: 0; flex: 1; min-height: 59px; gap: 1px 3px; padding: 9px; } .isl-budget-actions span { font-size: 7px; } .isl-budget-actions strong { font-size: 19px; } .isl-budget-actions svg { width: 13px; }
+  .isl-section { margin: 29px 0; } .isl-section-heading { margin-bottom: 15px; gap: 8px; } .isl-section-heading .isl-eyebrow { font-size: 6.5px; letter-spacing: 1.1px; } .isl-section-heading h2 { font-size: 22px; letter-spacing: -.8px; } .isl-section-heading .isl-text-link { font-size: 9px; gap: 5px; } .isl-section-heading .isl-text-link svg { width: 13px; }
+  .isl-product-rail { gap: 12px; margin-right: -16px; padding-right: 16px; } .isl-product-rail > article { min-width: 156px; flex-basis: 43%; } .isl-product-skeleton { min-width: 156px; height: 290px; }
+  .isl-brand-grid { gap: 8px; } .isl-brand-card { display: block; padding: 8px; border-radius: 9px; } .isl-brand-photo { width: 100%; height: 125px; border-radius: 6px; } .isl-brand-copy { padding: 11px 0 4px; } .isl-brand-copy h3 { font-size: 20px; } .isl-brand-copy > span { font-size: 7px; line-height: 1.6; margin-top: 4px; } .isl-brand-copy > svg { top: 15px; width: 13px; }
+  .isl-mosaic { gap: 10px; grid-template-columns: repeat(3, minmax(0, 1fr)); } .isl-mosaic-card { height: 195px; border-radius: 9px; } .isl-mosaic-card > div { padding: 12px 9px; } .isl-mosaic-card > div > span:first-child { font-size: 5px; letter-spacing: .8px; } .isl-mosaic-card h3 { font-size: 19px; margin: 5px 0 8px; letter-spacing: -.5px; } .isl-mosaic-cta { font-size: 7px; gap: 3px; line-height: 1.5; } .isl-mosaic-cta svg { width: 11px; flex-shrink: 0; }
+  .isl-local-section { margin-top: 29px; padding: 20px 17px; } .isl-local-intro { display: grid; grid-template-columns: 38px 1fr; gap: 12px; } .isl-local-icon { width: 38px; height: 46px; border-radius: 9px; } .isl-local-icon svg { width: 24px; } .isl-local-intro .isl-eyebrow { font-size: 6px; letter-spacing: 1px; } .isl-local-intro h2 { font-size: 21px; line-height: 1.15; margin: 6px 0; } .isl-local-intro p:last-child { font-size: 10px; } .isl-local-intro .isl-primary-button { grid-column: 1 / -1; margin: 5px 0 0; }
+  .isl-catalog-status strong { font-size: 9px; } .isl-catalog-status small { font-size: 8px; line-height: 1.7; } .isl-catalog-status .isl-text-link { font-size: 9px; } .isl-catalog-status > div > svg { display: none; }
+  .isl-footer { padding: 22px 0; gap: 18px; } .isl-footer-links { gap: 15px; } .isl-footer-links .isl-text-link { font-size: 9px; } .isl-reference-note { font-size: 8px; }
+}
+@media (max-width: 360px) { .isl-announcement { font-size: 7px; gap: 7px; } .isl-announcement-note { padding-left: 7px; } .isl-campaign-copy { padding-left: 15px; } .isl-campaign h1 { font-size: 28px; } .isl-campaign-description { font-size: 9px; } .isl-budget-actions button { padding: 8px 7px; } .isl-budget-actions strong { font-size: 17px; } .isl-mosaic-card { height: 165px; } .isl-mosaic-card h3 { font-size: 16px; } }

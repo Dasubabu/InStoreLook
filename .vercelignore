@@ -1,0 +1,15 @@
+# Local/private data is not part of the serverless deployment.
+.opencode/
+.git/
+.vercel/
+.env*
+*.log
+*.db
+*.db-*
+uploads/
+node_modules/
+dist/
+build/
+coverage/
+investor-demo/
+docs/screenshots/
